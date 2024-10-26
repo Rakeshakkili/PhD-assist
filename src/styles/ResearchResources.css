@@ -1,0 +1,119 @@
+/* ResearchResources.css */
+
+.research-resources {
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f0f4f8, #e6f2ff);
+    color: #333;
+    position: relative;
+    overflow: hidden;
+}
+
+.research-resources::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 10% 10%, rgba(0, 150, 136, 0.1), transparent);
+    z-index: 0;
+}
+
+.research-resources h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #007bff;
+    animation: fadeIn 1s ease-out;
+}
+
+.research-resources p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 50px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+.resource-category, .featured-resources, .recent-articles, .tools-software, .research-databases, .guides-tutorials {
+    margin-bottom: 60px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-category:hover, .featured-resources:hover, .recent-articles:hover, .tools-software:hover, .research-databases:hover, .guides-tutorials:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    animation: fadeIn 1s ease-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #666;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

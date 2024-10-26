@@ -1,0 +1,177 @@
+.contact {
+    padding: 2rem;
+    background: linear-gradient(135deg, #f3f3f3, #e0e0e0);
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .contact-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .contact-form {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: slideIn 0.8s ease-out;
+  }
+  
+  .contact-section {
+    margin-bottom: 2rem;
+  }
+  
+  .contact-section h2 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    animation: fadeIn 1s ease-out;
+  }
+  
+  .contact-section label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .contact-section input[type="text"],
+  .contact-section input[type="email"],
+  .contact-section input[type="tel"],
+  .contact-section input[type="date"],
+  .contact-section textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .contact-section input[type="text"]:focus,
+  .contact-section input[type="email"]:focus,
+  .contact-section input[type="tel"]:focus,
+  .contact-section input[type="date"]:focus,
+  .contact-section textarea:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+  }
+  
+  .contact-section textarea {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .checkbox-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .checkbox-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 0.75rem;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  .checkbox-group input[type="checkbox"] + span {
+    font-size: 1rem;
+    margin-left: 0.25rem;
+  }
+  
+  .radio-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .radio-group label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .radio-group input[type="radio"] {
+    margin-right: 0.75rem;
+    cursor: pointer;
+  }
+  
+  .submit-button {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    animation: pulse 2s infinite;
+  }
+  
+  .submit-button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+  }
+  
+  .footer-text {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #7f8c8d;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: #3498db;
+    }
+    50% {
+      background-color: #5dade2;
+    }
+    100% {
+      background-color: #3498db;
+    }
+  }
+  
